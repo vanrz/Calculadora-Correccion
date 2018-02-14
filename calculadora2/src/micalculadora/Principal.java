@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Principal {
     
     public static void main(String[] args){ 
+        
+        do{
         try{
         MiCalculadora miCalculadora;//definir
         miCalculadora=new MiCalculadora();//construir un objeto
@@ -78,7 +80,10 @@ public class Principal {
        
                
     }
-        catch()
+        catch(Exception e){
+            System.out.println("OPSS!! Thre program goes to a undefined state. Please call 911!!!");
+        }
+        }while(1==1);
     }
     
     }
