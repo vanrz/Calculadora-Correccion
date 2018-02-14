@@ -26,31 +26,31 @@ public class Principal {
         System.out.println("3) seno");
         System.out.println("4) coseno");
         
-        Scanner myS;
-        myS = new Scanner(System.in);
-        switch (myS.nextInt()) {     
+        Scanner myScanner;
+        myScanner = new Scanner(System.in);
+        switch (myScanner.nextInt()) {     
             case 1:
                 System.out.println("Ingrese X:");
-                miCalculadora.setX(myS.nextDouble());
+                miCalculadora.setX(myScanner.nextDouble());
                 System.out.println("Ingrese Y:");
-                miCalculadora.setY(myS.nextDouble());
+                miCalculadora.setY(myScanner.nextDouble());
                 miCalculadora.sumar();
                 System.out.println(miCalculadora.getR());
             case 2:
                 System.out.println("Ingrese X:");
-                miCalculadora.setX(myS.nextDouble());
+                miCalculadora.setX(myScanner.nextDouble());
                 System.out.println("Ingrese Y:");
-                miCalculadora.setY(myS.nextDouble());
+                miCalculadora.setY(myScanner.nextDouble());
                 miCalculadora.restar();
                 System.out.println(miCalculadora.getR());
             case 3:
                 System.out.println("Ingrese X:");
-                miCalculadora.setX(myS.nextDouble());
+                miCalculadora.setX(myScanner.nextDouble());
                 trigo.seno();
                 System.out.println(trigo.getR());
             case 4:
                 System.out.println("Ingrese X:");
-                miCalculadora.setX(myS.nextDouble());
+                miCalculadora.setX(myScanner.nextDouble());
                 trigo.coseno();
                 System.out.println(trigo.getR());
         }      
